@@ -6,7 +6,11 @@ const About = () => {
     <div className="dark:bg-black dark:text-white duration-300 sm:min-h-[600px] sm:grid sm:place-items-center">
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center">
-          <div>
+          <div
+            data-aos="slide-right"
+            data-aos-duration="1500"
+            data-aos-once="false"
+          >
             <img
               src={Car}
               alt="car_logo"
@@ -15,19 +19,24 @@ const About = () => {
           </div>
           <div>
             <div className="space-y-5 sm:p-16 pb-6">
-              <h1 className="text-3xl sm:text-4xl font-bold font-serif ">
+              <h1
+                data-aos="fade-up"
+                className="text-3xl sm:text-4xl font-bold font-serif "
+              >
                 About Us
               </h1>
-              <p>
+              <p data-aos="fade-up">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
                 pariatur veritatis nesciunt, debitis voluptatem inventore.
               </p>
-              <p>
+              <p data-aos="fade-up">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
                 ipsa optio ea eius numquam dolorem eveniet sint debitis nobis
                 voluptates labore ipsum perspiciatis
               </p>
-              <button className="button-outline">Get Started</button>
+              <button data-aos="fade-up" className="button-outline">
+                Get Started
+              </button>
             </div>
           </div>
         </div>

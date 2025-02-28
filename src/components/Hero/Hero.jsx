@@ -7,7 +7,11 @@ const Hero = ({ theme }) => {
     <div className="dark:bg-black dark:text-white duration-300 relative -z-20">
       <div className="container min-h-[620px] flex">
         <div className="grid place-items-center grid-cols-1 sm:grid-cols-2">
-          <div className="order-1 sm:order-2">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            className="order-1 sm:order-2"
+          >
             {theme === "light" ? (
               <img
                 src={Car}
@@ -23,16 +27,30 @@ const Hero = ({ theme }) => {
             )}
           </div>
           <div className="order-2 sm:order-1 space-y-5 sm:pr-32">
-            <p className="text-primary text-2xl font-serif">Effortless</p>
-            <h1 className="text-5xl lg:text-7xl font-semibold font-serif ">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="400"
+              className="text-primary text-2xl font-serif"
+            >
+              Effortless
+            </p>
+            <h1
+              data-aos="fade-up"
+              data-aos-delay="600"
+              className="text-5xl lg:text-7xl font-semibold font-serif "
+            >
               Car Rental
             </h1>
-            <p>
+            <p data-aos="fade-up" data-aos-delay="800">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut,
               quia. <br /> Lorem ipsum dolor sit amet, consectetur adipisicing
               elit. Distinctio, quidem!
             </p>
-            <button className="bg-primary text-black px-6 py-2 rounded-md hover:bg-primary/80 duration-300">
+            <button
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              className="bg-primary text-black px-6 py-2 rounded-md hover:bg-primary/80 duration-300"
+            >
               Get Started
             </button>
           </div>

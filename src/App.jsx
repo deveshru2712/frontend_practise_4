@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 
@@ -18,6 +21,15 @@ const App = () => {
     }
   }, [theme]);
 
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 100,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+    AOS.refresh();
+  }, []);
   return (
     <div>
       <Navbar theme={theme} setTheme={setTheme} />

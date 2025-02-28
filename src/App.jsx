@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -30,10 +31,12 @@ const App = () => {
     });
     AOS.refresh();
   }, []);
+
   return (
     <div>
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero theme={theme} />
+      <About />
     </div>
   );
 };

@@ -9,6 +9,7 @@ import Services from "./components/Services/Services";
 import Cars from "./components/Cars/Cars";
 import Reviews from "./components/Testimonials/Testimonials";
 import Store from "./components/Store/Store";
+import Banner from "./components/Banner/Banner";
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -45,6 +46,7 @@ const App = () => {
       <Cars />
       <Reviews />
       <Store />
+      <Banner />
     </div>
   );
 };

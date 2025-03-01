@@ -7,6 +7,7 @@ import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Services from "./components/Services/Services";
 import Cars from "./components/Cars/Cars";
+import Reviews from "./components/Testimonials/Testimonials";
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -41,6 +42,7 @@ const App = () => {
       <About />
       <Services />
       <Cars />
+      <Reviews />
     </div>
   );
 };

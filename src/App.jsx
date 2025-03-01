@@ -8,6 +8,7 @@ import About from "./components/About/About";
 import Services from "./components/Services/Services";
 import Cars from "./components/Cars/Cars";
 import Reviews from "./components/Testimonials/Testimonials";
+import Store from "./components/Store/Store";
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -36,13 +37,14 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className="bg-white dark:bg-black dark:text-white mb-14">
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero theme={theme} />
       <About />
       <Services />
       <Cars />
       <Reviews />
+      <Store />
     </div>
   );
 };

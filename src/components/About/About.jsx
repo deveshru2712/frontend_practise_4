@@ -3,7 +3,7 @@ import Car from "../../assets/car1.png";
 
 const About = () => {
   return (
-    <div className="dark:bg-black dark:text-white duration-300 sm:min-h-[600px] sm:grid sm:place-items-center">
+    <div className="dark:bg-black/90 bg-slate-100 dark:text-white duration-300 sm:min-h-[600px] sm:grid sm:place-items-center">
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center">
           <div
